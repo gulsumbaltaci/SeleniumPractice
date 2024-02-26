@@ -1,0 +1,19 @@
+
+H
+java:S2699"-Add at least one assertion to this test case.(€ÿúòùÿÿÿÿ
+H
+java:S2699*"-Add at least one assertion to this test case.(ã»ÿ›ùÿÿÿÿ
+
+java:S3577
+"‚Rename class "C02" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(šûŠïüÿÿÿÿ
+9
+java:S5786"Remove this 'public' modifier.(€ÿúòùÿÿÿÿ
+9
+java:S5786*"Remove this 'public' modifier.(ã»ÿ›ùÿÿÿÿ
+9
+java:S5786
+"Remove this 'public' modifier.(šûŠïüÿÿÿÿ
+:
+java:S2925$"$Remove this use of "Thread.sleep()".(öÍËè
+:
+java:S2925="$Remove this use of "Thread.sleep()".(öÍËè

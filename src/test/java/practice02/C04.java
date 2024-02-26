@@ -3,26 +3,13 @@ package practice02;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import utilities.TestBase;
 
-import java.time.Duration;
+public class C04 extends TestBase {
 
-public class C02 {
-
-    //css ve XPath kullanarak 2 test şeklinde yapılacak
-    // https://testpages.herokuapp.com/styled/calculator
-    // ilk kutucuga 30 gir
-    // ikinci kutucuga 15 gir
-    // calculate'e tıkla
-    // sonucu yazdır
-    // sayfayı kapat
 
     @Test
-    public void test01() throws InterruptedException {
-        // https://testpages.herokuapp.com/styled/calculator
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    public void test01() {
         driver.get("https://testpages.herokuapp.com/styled/calculator");
         // ilk kutucuga 30 gir
         driver.findElement(By.id("number1")).sendKeys("30");
@@ -33,19 +20,12 @@ public class C02 {
         // sonucu yazdır
         String sonuc = driver.findElement(By.id("answer")).getText();
         System.out.println("SONUC = " + sonuc);
-        Thread.sleep(3000);
-        // sayfayı kapat
-        driver.quit();
+
     }
 
     @Test
-    public void test02() throws InterruptedException {
-        // https://testpages.herokuapp.com/styled/calculator
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    public void test02() {
         driver.get("https://testpages.herokuapp.com/styled/calculator");
-
         // ilk kutucuga 30 gir
         driver.findElement(By.cssSelector("#number1")).sendKeys("30");
 
@@ -58,10 +38,6 @@ public class C02 {
         // sonucu yazdır
         String sonuc = driver.findElement(By.cssSelector("#answer")).getText();
         System.out.println("SONUC: " + sonuc);
-        Thread.sleep(3000);
 
-        // sayfayı kapat
-        driver.quit();
     }
 }
-
