@@ -21,6 +21,7 @@ import java.time.Duration;
 
         // sayfayı kapat
 
+
         @Test
         public void test01() throws InterruptedException {
             // https://testpages.herokuapp.com/styled/calculator
@@ -40,10 +41,8 @@ import java.time.Duration;
             Thread.sleep(3000);
             // sayfayı kapat
             driver.quit();
-            //SONUC = 45
+            // SONUC = 45
 
         }
-
-
 
 }
